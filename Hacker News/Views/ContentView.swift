@@ -9,7 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    init() {
+           UINavigationBar.appearance().backgroundColor = .red
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+        .foregroundColor: UIColor.white,
+        .font : UIFont(name:"Papyrus", size: 40)!]
+       }
     
     //@ObservedObject subscribes to the newtorkManager & listens for changes to update it's views accordingly (managing state)
     @ObservedObject var networkManager = NetworkManager()
@@ -30,9 +35,11 @@ struct ContentView: View {
             }
             .navigationBarTitle("HACKER NEWS")
         }
+        .accentColor(.white)
         .onAppear {
             self.networkManager.fetchData()
         }
+        
     }
 }
 
