@@ -11,4 +11,4 @@ Clone the project and open in XCode.  Launch on Simulator.
 
 # Screenshots of working app
 
-![App Screenshots] (https://github.com/BETH-A/Hacker-News/blob/master/HackerNewsScreenshots.png)
+![App Screenshots](https://github.com/BETH-A/Hacker-News/blob/master/HackerNewsScreenshots.png)
